@@ -161,7 +161,7 @@
     <script src="components/js/chatbot.js"></script> 
 
     <script>
-        // Carrega arquivos HTML
+        // Carrega arquivos HTML 
         async function loadComponent(id, file) {
             try {
                 const response = await fetch(file);
@@ -220,7 +220,7 @@
                     loadComponent('chatbot', 'components/html/chat-bot.html')
                 ]);
 
-                // 3. CARREGA ESTADOS DO USUÁRIO ANTES DE EXIBIR
+                // 3. CARREGA ESTADOS DO USUÁRIO ANTES DE Exibir 
                 const email = sessionStorage.getItem('userEmail') || 
                              (localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).email : null);
                 
